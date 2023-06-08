@@ -19,7 +19,7 @@ pip install torch
 #### Process
 aa.wav 입력 -> 10초 단위 분할 -> 변환 -> 모델 입력 -> 인식 결과 출력
 
-#### Results
+#### How to use
 ```
 # cmd
 cd 개인경로/flask_api
@@ -28,7 +28,7 @@ flask run             # Running on http://127.0.0.1:5000 뜨면 성공
 
 # 다른 cmd창
 cd 개인경로/flask_api/data/
-curl -X POST -H "Content-Type: multipart/form-data" http://localhost:5000/process -F "file=@aa.wav"
+curl -X POST -H "Content-Type: multipart/form-data" http://localhost:5000/predict -F "file=@aa.wav"
 # 뒤 aa.wav는 원하는 wav파일로 변경 가능
 
 ## 실행 결과
