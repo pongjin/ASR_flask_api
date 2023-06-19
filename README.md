@@ -3,8 +3,7 @@
 ```
 ├── flask_api/
    ├── app.py
-   ├── data/
-     └── audiofile2.wav
+   └── audiofile2.wav
 ```
 #### 필요 python 환경
 ```
@@ -30,7 +29,7 @@ set FLASK_APP=app.py
 flask run             # Running on http://127.0.0.1:5000 뜨면 성공
 
 # 다른 cmd창
-cd 개인경로/flask_api/data/
+cd 개인경로/flask_api/
 curl -X POST -H "Content-Type: multipart/form-data" http://localhost:5000/transcribe -F "file=@audiofile2.wav"
 # 뒤 aa.wav는 원하는 wav파일로 변경 가능
 
