@@ -8,6 +8,7 @@
 ```
 #### 필요 python 환경
 ```
+pip install https://github.com/kpu/kenlm/archive/master.zip
 pip install soundfile  
 pip install PySoundFile  
 pip install Flask  
@@ -16,6 +17,7 @@ pip install wave
 pip install torchaudio  
 pip install torch  
 pip install pyctcdecode
+pip install huggingface_hub 
 ```
 #### Process
 aa.wav 입력 -> 10초 단위 분할 -> 변환 -> 모델 입력 -> 인식 결과 출력
