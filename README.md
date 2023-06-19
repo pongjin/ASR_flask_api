@@ -15,6 +15,7 @@ pip install transformers
 pip install wave  
 pip install torchaudio  
 pip install torch  
+pip install pyctcdecode
 ```
 #### Process
 aa.wav 입력 -> 10초 단위 분할 -> 변환 -> 모델 입력 -> 인식 결과 출력
