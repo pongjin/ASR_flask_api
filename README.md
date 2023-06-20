@@ -9,6 +9,7 @@
 
 **kenlm 빌드로 인해 현재 리눅스랑 mac만 가능** 
 ```
+pip install openai
 pip install https://github.com/kpu/kenlm/archive/master.zip
 pip install soundfile  
 pip install PySoundFile  
