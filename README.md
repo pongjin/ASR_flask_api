@@ -1,5 +1,5 @@
 # Flask로 만든 간단한 음성인식 모델 API
-
+[에듀테크](https://github.com/EduTechProjects) 모델 API 부분
 #### Architecture  
 ```
 ├── flask_api/
