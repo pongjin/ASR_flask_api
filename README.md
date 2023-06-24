@@ -23,7 +23,8 @@ pip install wave
 pip install torchaudio  
 pip install torch  
 pip install pyctcdecode
-pip install huggingface_hub 
+pip install huggingface_hub
+pip install re
 ```
 #### Process
 .wav 입력 -> 16Khz 변환 -> 10초 단위 분할 -> 변환 -> 모델 입력 -> 인식 결과 출력 -> GPT3.5 turbo로 문맥, 문법 수정 -> 인식결과, 수정결과 반환
