@@ -7,7 +7,6 @@ import torchaudio
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor, Wav2Vec2ProcessorWithLM
 import os
 import openai
-import secret_key
 import re
 
 app = Flask(__name__)
@@ -21,7 +20,7 @@ model = Wav2Vec2ForCTC.from_pretrained(ASR_model)
 decoder = Wav2Vec2ProcessorWithLM.from_pretrained(ASR_model)
 
 # Set up your OpenAI API key
-openai.api_key = secret_key.key
+openai.api_key = ""
 
 @app.route('/transcribe', methods=['POST'])
 def transcribe_audio():
